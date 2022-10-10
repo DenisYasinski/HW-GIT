@@ -28,11 +28,10 @@ public class SalesManager {
     public long averageSale() {
         long sum = 0;
         for (long sale : sales) {
-            if (sale != min() && sale != min()) {
-                sum += sale;
-            }
+            sum += sale;
         }
-            sum = (sum - max() - min()) / (sales.length - 2);
-            return sum;
-        }
+
+        sum = (sum - max() - min()) / (sales.length - 2);
+        return sum;
     }
+}
