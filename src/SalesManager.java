@@ -32,7 +32,7 @@ public class SalesManager {
                 sum += sale;
             }
         }
-            sum = (sum - max() - min() / (sales.length - 2));
+            sum = (sum - max() - min()) / (sales.length - 2);
             return sum;
         }
     }
